@@ -1,4 +1,4 @@
-# LAMP Docker pour o2switch
+# Docker LAMP
 
 Environnement de développement LAMP (Apache, MySQL, PHP 8.3) configuré pour reproduire l’hébergement mutualisé de o2switch. Prêt à l’emploi pour Laravel, WordPress ou tout autre projet PHP.
 
