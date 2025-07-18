@@ -51,3 +51,10 @@ WORKDIR /var/www/html
 
 # Ajouter Composer depuis l'image officielle
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+# Copie le script d'entrée
+COPY config/entrypoint.sh /entrypoint.sh
+RUN ls -la /
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
